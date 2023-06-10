@@ -22,7 +22,7 @@ The Markdown Explorer is a comprehensive tool designed to assist both beginners 
 
 Users can follow these steps to effectively utilize the Markdown Guide Application:
 
-1. **Access the Application**: Users can access the [Markdown Explorer repository](https://github.com/example/repository) on GitHub. They can clone the repository or download the code to their local environment.
+1. **Access the Application**: Users can access the [Markdown Explorer repository](https://github.com/example/repository) on GitHub. They can clone the repository or download the code to their local environment.Or use the live application that will be realesed soon [Markdown Exporer]()
 
 2. **Explore Documentation**: Users can refer to the provided documentation to learn about Markdown syntax and conventions. Beginners can start with the step-by-step guides, while experienced users can browse the advanced techniques and tips.
 
