@@ -43,3 +43,57 @@ small{
   color: white;
   font-size: 100px;
 }
+@media screen and (max-width: 1090px) {
+  h1{
+    font-size: 70px;
+  }
+  span{
+    font-size: 70px;
+    margin: 20px;
+    padding: 10px;
+  }
+  small{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  h1{
+    font-size: 50px;
+  }
+  span{
+    font-size: 50px;
+    margin: 15px;
+    padding: 10px;
+  }
+  small{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
+  span{
+    font-size: 30px;
+    margin: 10px;
+    padding: 5px;
+  }
+  small{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 365px) {
+  h1{
+    font-size: 20px;
+  }
+  span{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+  }
+  small{
+    font-size: 10px;
+  }
+}
+  
