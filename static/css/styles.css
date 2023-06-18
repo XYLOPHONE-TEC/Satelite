@@ -9,7 +9,8 @@ body{
     background-image: url("/static/fonts/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center center;
+    height: 100vh;
 }
 h1{
   font-size: 100px;
