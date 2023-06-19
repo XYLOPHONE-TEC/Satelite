@@ -14,13 +14,28 @@
       <!-- this is the mounted div -->
       <h1>Markdown Explorer</h1>
       <div class="time">
-        <span id="hour"></span>
-        <small>:</small>
-        <span id="min"></span>
-        <small>:</small>
-        <span id="sec"></span>
+        <section>
+          <span id="days"></span>
+          <small>:</small>
+          <p>Days</p>
+        </section>
+        <section>
+          <span id="hours"></span>
+          <small>:</small>
+          <p>Hours</p>
+        </section>
+        <section>
+          <span id="min"></span>
+          <small>:</small>
+          <p>Minutes</p>
+        </section>
+        <section>
+          <span id="sec"></span>
+          <p>Seconds</p>
+        </section>
+       
       </div>
-      
+      <h1 id="countdown"></h1>
     </div>
     <script src="./static/js/vue.js"></script>
     <script src="./static/js/package.json"></script>
