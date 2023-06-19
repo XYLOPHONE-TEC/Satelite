@@ -1,0 +1,99 @@
+/* google fonts importation */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/static/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf') format('truetype');
+  }
+  
+body{
+    font-family: 'Fira Code', monospace;
+    background-image: url("/static/fonts/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+h1{
+  font-size: 100px;
+  background: linear-gradient(to right,#5afa6f,#8c52ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+#app{
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  width: 95%;
+  height: auto;
+  margin:auto;
+  border-radius: 10px;
+}
+span{
+  font-size: 100px;
+  color: white;
+  margin: 20px;
+  border: white 5px solid;
+  border-radius: 50%;
+  padding: 15px;
+}
+.time{
+  text-align: center;
+}
+small{
+  color: white;
+  font-size: 100px;
+}
+@media (min-width:1025px) and (max-width: 1200px) {
+  h1{
+    font-size: 70px;
+  }
+  span{
+    font-size: 70px;
+    margin: 20px;
+    padding: 10px;
+  }
+  small{
+    font-size: 30px;
+  }
+}
+@media (min-width:769px)and (max-width: 1024px) {
+  h1{
+    font-size: 50px;
+  }
+  span{
+    font-size: 50px;
+    margin: 15px;
+    padding: 10px;
+  }
+  small{
+    font-size: 30px;
+  }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+  h1{
+    font-size: 30px;
+  }
+  span{
+    font-size: 30px;
+    margin: 10px;
+    padding: 5px;
+  }
+  small{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 20px;
+  }
+  span{
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+  }
+  small{
+    font-size: 10px;
+  }
+}
+  
