@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        {{ message }}
     </div>
 </template>
 
@@ -13,7 +13,7 @@
             }
         },
         methods:{
-            
+
         }
     }
 </script>
