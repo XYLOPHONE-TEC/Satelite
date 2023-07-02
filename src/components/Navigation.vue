@@ -1,22 +1,22 @@
 <template>
-    <div>
-{{ message }}
-    </div>
+    <h1>{{ message }}</h1>
 </template>
 
 <script>
     export default {
-        name:"Desc-C",
+        name :"Nav-C",
         data(){
             return{
-                message:"desciption"
+                message:"Navigation"
             }
-        },methods:{
+        },
+        methods:{
 
         }
+        
     }
 </script>
 
-<style  scoped>
+<style scoped>
 
 </style>

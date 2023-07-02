@@ -1,12 +1,23 @@
 <template>
-  <h1 @click="num=5" v-bind:class="ispromoted && ['promoted','new']" v-show="num===13" > promoted</h1>
-  <h1 @click="num=13" v-bind:class="ispromoted && ['promoted','new']" v-show="num==5" > click me</h1>
-  
+   <Nav />
+   <Desc />
+   <Select />
 </template>
 
 <script>
+
+import Desc from './components/Description.vue'
+import Nav from './components/Navigation.vue'
+import Select from  './components/Select.vue'
+
 export default {
   name: "App",
+  components:{
+    Nav,
+    Desc,
+    Select,
+    
+  },
   data() {
     return {
       ispromoted:true,
