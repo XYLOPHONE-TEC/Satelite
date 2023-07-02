@@ -1,11 +1,14 @@
 <template>
+  <div>
    <Nav/>
+  </div>
    <div class="main">
       <Desc/>
       <Select/>
       <Spec/>
       <Code/>
       <Exp/>
+      <Editor/>
       <Pre/>
    </div>
    
@@ -19,6 +22,7 @@ import Select from  './components/Select.vue'
 import Spec from './components/Specific.vue'
 import Code from './components/code.vue'
 import Exp from './components/explained.vue'
+import Editor from './components/editor.vue'
 import Pre from './components/Preview.vue'
 
 export default {
@@ -31,6 +35,7 @@ export default {
     Code,
     Exp,
     Pre,
+    Editor,
 
   },
   data() {
@@ -57,14 +62,18 @@ body{
     format("truetype");
   
 }
-.promoted{
-  color:rgb(34, 35, 94);
-  text-align: center;
-}
-.new{
-  font-size: 150px;
-  font-style: italic;
-  
+.main{
+  background-image: url('../public/fonts/images/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: static;
+  background-repeat: none;
+  margin-top:20px;
+  height: 92vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+
 }
 
 #app {
