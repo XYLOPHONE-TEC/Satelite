@@ -1,4 +1,4 @@
-<template>
+<template :class="flex">
   <div>
    <Nav/>
   </div>
@@ -62,17 +62,19 @@ body{
     format("truetype");
   
 }
+.flex{
+  display:flex;
+  flex-direction: column;
+}
 .main{
   background-image: url('../public/fonts/images/background.jpg');
   background-position: center center;
   background-size: cover;
   background-attachment: static;
   background-repeat: none;
-  margin-top:20px;
-  height: 92vh;
+  flex-grow: ;
   width: 100vw;
-  position: fixed;
-  bottom: 0;
+  
 
 }
 
