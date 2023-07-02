@@ -1,5 +1,6 @@
 <template>
-  <h1 v-bind:class="ispromoted && ['promoted','new']" v-if="num===13"> promoted</h1>
+  <h1 @click="num=5" v-bind:class="ispromoted && ['promoted','new']" v-show="num===13" > promoted</h1>
+  <h1 @click="num=13" v-bind:class="ispromoted && ['promoted','new']" v-show="num==5" > click me</h1>
   
 </template>
 
@@ -12,6 +13,9 @@ export default {
       num:13
     };
   },
+  methods:{
+    
+  }
 };
 </script>
 
@@ -28,7 +32,7 @@ body{
   
 }
 .promoted{
-  color:rgb(0, 255, 64);
+  color:rgb(34, 35, 94);
   text-align: center;
 }
 .new{
@@ -36,9 +40,7 @@ body{
   font-style: italic;
   
 }
-.not{
-  color:rgb(51, 153, 76)
-}
+
 #app {
   font-family: Fira Code, monospace;
 }
