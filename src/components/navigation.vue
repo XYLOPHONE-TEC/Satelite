@@ -54,11 +54,14 @@ li{
 @media only screen and (min-width:1551px){
 
 }
-
-@media only screen and (min-width: 1440)  and ( max-width: 1550px){
+@media only screen and (min-width: 1025)  and ( max-width: 1555px){
 
 }
-@media only screen and (min-width:720px ) and (max-width: 1024px){
+
+@media only screen and (min-width: 720)  and ( max-width: 1024px){
+
+}
+@media only screen and (min-width:415px ) and (max-width: 720px){
     img{
     width:70px;
     height:50px;
