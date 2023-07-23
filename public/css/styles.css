@@ -1,0 +1,42 @@
+body{
+    background-image: url('../fonts/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    margin: 0;
+    padding: 0;
+}
+#droper{
+    display: none;
+}
+
+
+/* media queries for mobile devices */
+
+@media screen and (max-width: 480px) {
+
+    .dropdownicons{
+        display: none;
+    }
+    #droper{
+        display: block;
+    }
+
+  }
+
+    /* media queries for tablets */
+@media screen and (min-width:481px)and (max-width: 768px) {
+
+    .dropdownicons{
+        display: none;
+    }
+    #droper{
+        display: block;
+    }
+
+  }
+    /* media for large screens */
+  @media screen and (min-width:1200px) {
+
+  }

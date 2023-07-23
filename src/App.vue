@@ -51,11 +51,7 @@ export default {
 </script>
 
 <style>
-body{
-  margin:0;
-  padding:0;
-  height: 100%;
-}
+  
 @font-face {
   font-family: "Fira Code";
   src: url("../public/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf")
@@ -65,17 +61,6 @@ body{
 .flex{
   display:flex;
   flex-direction: column;
-}
-.main{
-  background-image: url('../public/fonts/images/background.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-attachment: static;
-  background-repeat: none;
-  flex-grow: ;
-  width: 100vw;
-  
-
 }
 
 #app {
