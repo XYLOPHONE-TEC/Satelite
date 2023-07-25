@@ -19,5 +19,4 @@
 </script>
 
 <style scoped>
-
 </style>

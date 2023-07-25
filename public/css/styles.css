@@ -1,42 +1,63 @@
 body{
+    margin:0;
+    padding:0;
+} 
+
+#app{
     background-image: url('../fonts/images/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;  
+    background-size: cover;  
     margin: 0;
     padding: 0;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
 }
 #droper{
     display: none;
 }
 
 
-/* media queries for mobile devices */
 
-@media screen and (max-width: 480px) {
-
-    .dropdownicons{
-        display: none;
-    }
-    #droper{
-        display: block;
-    }
-
-  }
 
     /* media queries for tablets */
-@media screen and (min-width:481px)and (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
     .dropdownicons{
         display: none;
     }
     #droper{
         display: block;
     }
+    .dropdownicons.responsive {
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top :45px;
+        right:0;
+        background-image: linear-gradient(to right, #ff5757,#8c52ff);
+        width:50px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;     
+    }
+   .dropdownicons.responsive .icons{
+    background-color:#040344;
+    border-radius: 50%;
+    padding:5px;
+    margin:5px
+
+   }
 
   }
     /* media for large screens */
-  @media screen and (min-width:1200px) {
+   @media screen and (min-width:1400px) { 
+    #app{
+        width: 70%;
+        margin: 0 auto;
+    }
 
-  }
+}

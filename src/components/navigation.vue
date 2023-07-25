@@ -33,7 +33,7 @@
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg"  class="icons" fill=" currentColor" viewBox="0 -960 960 960" ><path d="M149.825-280Q137-280 128.5-288.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-450 128.5-458.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5Zm0-170Q137-620 128.5-628.675q-8.5-8.676-8.5-21.5 0-12.825 8.675-21.325 8.676-8.5 21.5-8.5 12.825 0 21.325 8.675 8.5 8.676 8.5 21.5 0 12.825-8.675 21.325-8.676 8.5-21.5 8.5ZM290-280v-60h550v60H290Zm0-170v-60h550v60H290Zm0-170v-60h550v60H290Z"/></svg>
             </div>
-            <svg @click="dropdown()" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 -960 960 960" id="droper"><path  d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+            <svg @click="dropdownfunc()" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 -960 960 960" id="droper"><path  d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
         </div>
       </ul> 
     </div>
@@ -51,18 +51,15 @@
             }
         },
         methods:{
-            dropdown(){
-                let dropdown = document.getElementById("dropicons")
-                if(this.drop == false){
-                    dropdown.style='display:flex;flex-direction:column;justify-content:space-around;position:absolute;margin:auto;top:50px;right:5px;opacity:10;transition: 1s opacity;background-image: linear-gradient(to right, #ff5757 , #8c52ff);border-radius: 10px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);'
-                    this.drop = true
-                }else{
-                    dropdown.style.display = "none"
-                    this.drop = false
+           
+            dropdownfunc() {
+                var x = document.getElementById("dropicons");
+                if (x.className === "dropdownicons") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "dropdownicons";
                 }
-            }
-            //this for handlering media queries
-
+                } 
         }
         
     }
@@ -115,6 +112,7 @@ p{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
    
 } 
 
