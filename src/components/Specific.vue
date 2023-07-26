@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="specific">
         {{ message }}
     </div>
 </template>
@@ -19,5 +19,9 @@
 </script>
 
 <style scoped>
+.specific{
+    background: red;
 
+    
+}
 </style>

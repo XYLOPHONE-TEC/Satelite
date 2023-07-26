@@ -115,5 +115,42 @@ p{
     position: relative;
    
 } 
+#droper{
+    display: none;
+}
+
+
+
+
+    /* media queries for tablets */
+@media screen and (max-width: 768px) {
+    .dropdownicons{
+        display: none;
+    }
+    #droper{
+        display: block;
+    }
+    .dropdownicons.responsive {
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top :45px;
+        right:0;
+        background-image: linear-gradient(to right, #ff5757,#8c52ff);
+        width:50px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between; 
+        z-index:3; 
+    }
+   .dropdownicons.responsive .icons{
+    background-color:#040344;
+    border-radius: 50%;
+    padding:5px;
+    margin:5px
+
+   }
+
+  }
 
 </style>

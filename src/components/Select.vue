@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="select">
 {{ message }}
     </div>
 </template>
@@ -19,5 +19,7 @@
 </script>
 
 <style  scoped>
-
+.select{
+    background: orange;
+}
 </style>

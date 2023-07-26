@@ -17,47 +17,175 @@ body{
     left:0;
     bottom:0;
 }
-#droper{
-    display: none;
+.main{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
 }
 
 
 
+/* ...................the heading component................ */
+.heading{
+    height: 70px;
+   } 
+h1{
+    font-size: 17px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+p{
+    font-size:13px;
+    padding: 5px;
+}
+.instruction{
+    margin: 0 auto;
+    position:relative;
+    top:-30px;
+}
+/* end the regular query */
 
-    /* media queries for tablets */
-@media screen and (max-width: 768px) {
-    .dropdownicons{
-        display: none;
-    }
-    #droper{
-        display: block;
-    }
-    .dropdownicons.responsive {
-        display: flex;
-        flex-direction: column;
-        position:absolute;
-        top :45px;
-        right:0;
-        background-image: linear-gradient(to right, #ff5757,#8c52ff);
-        width:50px;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: space-between;     
-    }
-   .dropdownicons.responsive .icons{
-    background-color:#040344;
-    border-radius: 50%;
-    padding:5px;
-    margin:5px
+/* global queries */
+@media screen and (min-width:320px) {
 
+    /* .................the heading ..................*/
+   .heading{
+    height: 120px;
+   } 
+   h1{
+    font-size: 1.5rem;
+    padding: 25px;
+    margin: 0;
+   }
+   p{
+    font-size: 1rem;
+    padding: 20px;
+    margin: 0;
+   }
+   .instruction{
+    width: 65%;
+    margin: 0 auto;
+   
    }
 
-  }
-    /* media for large screens */
-   @media screen and (min-width:1400px) { 
-    #app{
-        width: 70%;
+
+}
+@media screen and (min-width:450px) {
+
+    /*................. the heading................ */
+    .heading{
+        height: 150px;
+       } 
+       h1{
+        font-size: 2.3rem;
+        padding: 30px;
+        margin: 0;
+       }
+       p{
+        font-size: 1.2rem;
+        padding: 20px;
+        margin: 0;
+       }
+       .instruction{
+        width: 65%;
         margin: 0 auto;
+       }
+       
+}
+@media screen and (min-width:670px) {
+
+    /* .................the heading .................*/
+    .heading{
+        height: 170px;
+        margin: auto;
+       } 
+       h1{
+        font-size: 2rem;
+        padding: 30px 2px;
+        margin: 0;
+       }
+       p{
+        font-size: 1rem;
+        padding: 20px;
+        margin: 0;
+       }
+       .instruction{
+        width: 65%;
+        position: relative;
+        top:-50px;
+        margin:0 30px;
+       }
+       .main{
+        display: grid;
+        grid-template-columns:auto 45% ;
+        grid-gap:20px;
+        margin:10px;
     }
 
+}
+@media screen and (min-width:1024px) {
+
+    /*............... the heading ..............*/
+    .heading{
+        height: 200px;
+        margin: auto;
+       } 
+       h1{
+        font-size: 2.5rem;
+        padding: 30px 2px;
+        margin: 0;
+       }
+       p{
+        font-size: 1.2rem;
+        padding: 30px;
+        margin: 0;
+       }
+       .instruction{
+        width: 65%;
+        position: relative;
+        top:-70px;
+        margin:0 30px;
+
+       }
+       .main{
+        grid-template-columns:45% auto ;
+    }
+
+}
+@media screen and (min-width:1400px) {
+    
+    /* .............the app and main division ..............*/
+    .main{
+        grid-template-columns:45% auto ;
+        }
+    #app{
+        width:50%;
+        margin: auto;
+    }
+   
+    /* .............the heading ...............*/
+    .heading{
+        height: 400px;
+        margin: auto;
+       } 
+       h1{
+        font-size: 4rem;
+        padding: 100px 2px;
+        margin: 0;
+       }
+       p{
+        font-size: 2rem;
+        padding: 30px;
+        margin: 0;
+       }
+       .instruction{
+        width: 65%;
+        position: relative;
+        top:-70px;
+        margin:0 30px;
+
+       }
+
+
+    
 }
