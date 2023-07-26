@@ -5,15 +5,20 @@
         </div>
         <div class="instruction">
                <p>Select from the list of items below to generate the code snippet</p>
-        </div>
-      
-        
+        </div> 
+        <Select></Select>
     </div>
+   
 </template>
 
 <script>
+import Select from './Select.vue'
     export default {
+       
         name:"Desc-C",
+        components:{
+            Select,
+        },
         data(){
             return{
                 message:"desciption"
