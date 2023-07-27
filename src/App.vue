@@ -4,7 +4,6 @@
   </div>
    <div class="main">
       <Desc/>
-      <Spec/> 
       <Code/>
       <Exp/>
       <Editor/>
@@ -17,7 +16,6 @@
 <script>
 import Nav from './components/navigation.vue'
 import Desc from './components/Description.vue'
-import Spec from './components/Specific.vue'
 import Code from './components/code.vue'
 import Exp from './components/explained.vue'
 import Editor from './components/editor.vue'
@@ -28,7 +26,6 @@ export default {
   components:{
     Nav,
     Desc,
-    Spec,
     Code,
     Exp,
     Pre,

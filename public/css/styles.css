@@ -104,6 +104,23 @@ p{
     color: white;
     background:#0d798f;
 }
+
+/* ...........the code handler.............. */
+
+.code-handler{
+    background: #040f1b;
+    width: 100%;
+    min-height: 100px;
+    margin: auto;
+    text-align: left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    box-shadow:  0 0 5px  #0d798f, 0 0 7px  #0d798f, 0 0 0px #0d798f;
+}
+.span{
+    padding: 10px 5px;
+    margin: 5px;
+  }
 /* ...........end the regular query ..............*/
 
 
@@ -234,7 +251,7 @@ p{
         transition: 1s background;
     }
 }
-@media screen and (min-width:670px) {
+@media screen and (min-width:6px) {
 
     /* .................the heading .................*/
     .heading{
@@ -259,7 +276,7 @@ p{
        }
        .main{
         display: grid;
-        grid-template-columns:auto 45% ;
+        grid-template-columns:auto 75% ;
         grid-gap:20px;
         margin:10px;
     }
@@ -350,6 +367,13 @@ p{
         transition: 1s background;
     }
 
+    /* .............the code handler............ */
+    .code-handler{
+       
+        margin: 100px auto;
+        
+    }
+
 }
 @media screen and (min-width:1670px) {
     
@@ -423,5 +447,13 @@ p{
         color:#06f79b;
         transition: 1s background;
     }
+
+    /* .............the code handler............ */
+    .code-handler{
+       
+        margin: 100px auto;
+        
+    }
+
 }
     
