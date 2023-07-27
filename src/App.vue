@@ -4,7 +4,7 @@
   </div>
    <div class="main">
       <Desc/>
-      <Spec/>
+      <Spec/> 
       <Code/>
       <Exp/>
       <Editor/>

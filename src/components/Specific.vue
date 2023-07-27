@@ -20,7 +20,7 @@
 
 <style scoped>
 .specific{
-    background: red;
+    background:#1f1926;
 
     
 }
