@@ -1,6 +1,6 @@
 <template>
-    <div class="code">
-     
+    
+     <div class="code">
       <div class="code-handler">
         <div class="code-title">
       <div class="code-tag">
@@ -19,12 +19,17 @@
         <span id="gen-cod"></span><span id="blinker"> &#x258F;</span>
       </div>
       </div>
-    </div>
+      <Exp/>
+   </div>
 </template>
 
 <script>
+import Exp from './explained.vue'
     export default {
       name:'Code-C',
+      components:{
+        Exp,
+      },
       data(){
         return{
             copied:false

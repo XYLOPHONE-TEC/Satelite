@@ -5,7 +5,6 @@
    <div class="main">
       <Desc/>
       <Code/>
-      <Exp/>
       <Editor/>
       <Pre/>
    </div>
@@ -17,7 +16,6 @@
 import Nav from './components/navigation.vue'
 import Desc from './components/Description.vue'
 import Code from './components/code.vue'
-import Exp from './components/explained.vue'
 import Editor from './components/editor.vue'
 import Pre from './components/Preview.vue'
 
@@ -27,7 +25,6 @@ export default {
     Nav,
     Desc,
     Code,
-    Exp,
     Pre,
     Editor,
 

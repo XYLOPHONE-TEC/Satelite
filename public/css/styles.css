@@ -109,9 +109,9 @@ p{
 
 .code-handler{
     background: #040f1b;
-    width: 100%;
+    width:90%;
+    margin:auto;
     min-height: 100px;
-    margin: auto;
     text-align: left;
     border-top-left-radius: 10px;
     border-top-right-radius: 20px;
@@ -241,7 +241,7 @@ p{
         width:75%;
         border-radius: 7px;
         height: 200px;
-        margin:auto 30px
+        margin:auto 7%
         
     } 
      .option{
@@ -251,7 +251,7 @@ p{
         transition: 1s background;
     }
 }
-@media screen and (min-width:6px) {
+@media screen and (min-width:768px) {
 
     /* .................the heading .................*/
     .heading{
@@ -276,7 +276,7 @@ p{
        }
        .main{
         display: grid;
-        grid-template-columns:auto 75% ;
+        grid-template-columns: 50% auto ;
         grid-gap:20px;
         margin:10px;
     }

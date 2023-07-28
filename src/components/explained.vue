@@ -1,6 +1,9 @@
 <template>
     <div>
-        {{ message }}
+        <div class="explaination">
+            {{ message }}
+
+        </div>
     </div>
 </template>
 
@@ -9,11 +12,13 @@
         name:'Exp-C',
         data(){
             return{
-                message:'Explained'
+                message:'Explained',
+                html:"<h1>hello</h1>"
+
             }
         }
     }
-</script>
+</script>   
 
 <style scoped>
 
