@@ -19,7 +19,10 @@
         <span id="gen-cod"></span><span id="blinker"> &#x258F;</span>
       </div>
       </div>
-      <Exp/>
+      <template v-if="exp">
+        <Exp/>
+      </template>
+     
    </div>
 </template>
 
@@ -32,11 +35,12 @@ import Exp from './explained.vue'
       },
       data(){
         return{
-            copied:false
+            copied:false,
+            exp:false,
         }
       },
       methods:{
-        
+       
       }  
     }
 </script>

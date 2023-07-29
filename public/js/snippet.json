@@ -3,7 +3,7 @@
     "comment: these is the json data to be rendered in the html code",
     {
      "name":"h1",
-        "code":"heading",
+        "code":"#heading",
         "explaination":"This is a heading"
     }
 

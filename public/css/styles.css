@@ -319,6 +319,13 @@ p{
         color:#06f79b;
         transition: 1s background;
     }
+
+     /* .............the code handler............ */
+     .code-handler{
+       
+        margin: 100px auto;
+        
+    }
 }
 
 
@@ -373,6 +380,7 @@ p{
         margin: 100px auto;
         
     }
+
 
 }
 @media screen and (min-width:1670px) {
