@@ -4,41 +4,68 @@
             <p>Let's create a :</p>
         </div>
         <div class="input">
-        <input v-model="selected" type="text" placeholder="select or type" class="choice-inputs">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" id="select-droper" @click="optionfunc()"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+        <input  type="text" placeholder="select or type" class="choice-inputs"  v-model="inputs" @input="QueryResult(inputs)">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 -960 960 960" id="select-droper" @click="optionfunc()" @input="QueryResult(inputs)"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
         </div>
         <template v-if="mention">
         <div class="options" id="optionsdiv" >
-            <p id="0" class="option">option1</p>
-            <p id="1" class="option">option1</p>
-            <p id="2" class="option">option1</p>
-            <p id="3" class="option">option1</p>
-            <p id="4" class="option">option1</p>
-            <p id="5" class="option">option1</p>
-            <p id="6" class="option">option1</p>
-            <p id="7" class="option">option1</p>
-            <p id="8" class="option">option1</p>
+            <p v-for="resultitem in resultList" :key="resultitem.id" @click="Clicked(resultitem.name,resultitem.explaination)" class="option">{{ resultitem.name }}</p>
         </div>
         </template>
    </div>
+   
 </template>
 
 <script>
+    import userData from '../assets/user.json';
+    import {generate} from '../../public/js/generate'
+    
     export default {
         name:"Select-C",
         data(){
             return{
-                mention:false
+                mention:false,
+                inputs: "",
+                resultList: [],
+
             }
         },
         methods: {
+            // diplayfuntion
             optionfunc() {
                 if (this.mention === true) {
                     this.mention=false;
+                    this.resultList=[]
                 } else {
                     this.mention=true;
+                    this.resultList=userData.filter(items =>items.name)
                 }
-                } 
+                } ,
+                
+
+                // object querying
+             QueryResult(query) {
+                //set the veiwlis to false
+
+                let trimmedQuery = query.trim();
+                this.mention=true
+                if (trimmedQuery === "") {
+                    this.mention=false
+                    this.resultList = [];
+                    return;
+                }
+                this.resultList = userData.filter(algo =>
+                query.split(" ").some(word => algo.name.toLowerCase().includes(word.toLowerCase()))
+            );
+            },
+
+
+        //    code display
+            Clicked(gotten,gottenExp){
+                  this.mention=false
+                  generate(gotten,gottenExp)
+        
+       }
         },
     }
 </script>

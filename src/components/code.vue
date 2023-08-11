@@ -19,9 +19,8 @@
         <span id="gen-cod"></span><span id="blinker"> &#x258F;</span>
       </div>
       </div>
-      <template v-if="exp">
+      
         <Exp/>
-      </template>
      
    </div>
 </template>
@@ -36,12 +35,8 @@ import Exp from './explained.vue'
       data(){
         return{
             copied:false,
-            exp:false,
         }
       },
-      methods:{
-       
-      }  
     }
 </script>
 
@@ -78,11 +73,11 @@ svg{
 #blinker{
   color:#0d8f59;
   font-size: 20px;
-  animation: blinker .7s linear infinite;
+  animation: blinker 1s linear infinite;
   padding: 0 5px;
 }
 @keyframes blinker {
-  100% {
+  50% {
     opacity: 0;
   }
 }

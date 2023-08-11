@@ -5,7 +5,7 @@
                 <p id="exp-heading">Explaination</p>
             </div>
             <div class="exp-content">
-                <p id="exp-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum.</p>
+                <p id="exp-content"></p>
             </div>
         </div>
     </div>
@@ -16,8 +16,7 @@
         name:'Exp-C',
         data(){
             return{
-                message:'Explained',
-                html:"<h1>hello</h1>"
+             
 
             }
         }
