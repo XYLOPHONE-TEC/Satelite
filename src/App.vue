@@ -7,7 +7,8 @@
       <Code/>
      
    </div>
-   
+  
+  
 
 </template>
 
@@ -15,6 +16,7 @@
 import Nav from './components/navigation.vue'
 import Desc from './components/Description.vue'
 import Code from './components/code.vue'
+
 
 
 export default {

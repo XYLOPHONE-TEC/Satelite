@@ -14,7 +14,7 @@
     {
       "id": ".md-1.0.1",
       "name": "Link",
-      "code":"[Link](https://www.google.com)",
+      "code":"[Link]( https://www.eg.com )  ",
       "explaination":"The code provided above creates a link to a website, feel free to customize the code to meet your different prefferances by changing the text in the square brackets to your desired text and the link in the round brackets to your desired link."
     }
    
