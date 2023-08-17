@@ -118,7 +118,7 @@ p{
     background: #040f1b;
     width:90%;
     margin:auto;
-    min-height: 100px;
+    min-height: 50px;
     text-align: left;
     border-top-left-radius: 10px;
     border-top-right-radius: 20px;
@@ -127,7 +127,18 @@ p{
 .span{
     padding: 10px 5px;
     margin: 5px;
+    
   }
+
+
+ 
+  
+  /* the footer */
+
+
+
+
+
 /* ...........end the regular query ..............*/
 
 
