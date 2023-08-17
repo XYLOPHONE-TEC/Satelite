@@ -1,40 +1,21 @@
 [
     {
-      "id": 0,
-      "name": "abcdefj",
-      "explaination":"John ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum."
+      "id": ".md-1",
+      "name": "Markdown file",
+      "code":"Linux and MacOS  , open terminal > navigator to the folder you want to save the file in > type ' touch filename.md ' > open the file in your favorite text editor and start writing your markdown code. Windows  , open command prompt > navigator to the folder you want to save the file in  > type ' echo.>filename.md '> open the file in your favorite text editor and start writing your markdown code. ",
+      "explaination":"Markdown is a lightweight markup language for creating formatted text using a plain-text editor. John Gruber and Aaron Swartz created Markdown in 2004 as a markup language that is appealing to human readers in its source code form. Markdown is widely used in blogging, instant messaging, online forums, collaborative software, documentation pages, and readme files.<br/><a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>Read more</a>"
     },
     {
-      "id": 1,
-      "name": "hijklmn",
-      "explaination":"Jane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum."
+      "id": ".md-1.0.0",
+      "name": "Heading",
+      "code":"# Heading ",
+      "explaination":" The code provided above creates an HTML element of 'h1', feel free the customize the code to meet your different prefferances to the  h2,h3,h4,h5,h6 ## Heading 2  ### Heading 3  #### Heading 4  ##### Heading 5  ###### Heading 6. Note that the number of '#' determines the size of the heading."
     },
     {
-      "id": 2,
-      "name": "opqrstu",
-      "explaination":"jack ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum."
-    },
-    {
-      "id": 3,
-      "name": "vwxyzab",
-      "explaination":"jill is the fourth object in the array there fore free to update me as kalungi suggestedJane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum.Jane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum."
+      "id": ".md-1.0.1",
+      "name": "Link",
+      "code":"[Link](https://www.google.com)",
+      "explaination":"The code provided above creates a link to a website, feel free to customize the code to meet your different prefferances by changing the text in the square brackets to your desired text and the link in the round brackets to your desired link."
     }
-    ,
-    {
-      "id": 4,
-      "name": "djdswwes",
-      "explaination":"jill is the fourth object in the array there fore free to update me as kalungi suggestedJane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum.Jane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum."
-    }
-    ,
-    {
-      "id": 5,
-      "name": "sxmxiaew",
-      "explaination":"jill is the fourth object in the array there fore free to update me as kalungi suggestedJane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum.Jane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum."
-    }
-    ,
-    {
-      "id": 6,
-      "name": "vxnooooezmersdm",
-      "explaination":"jill is the fourth object in the array there fore free to update me as kalungi suggestedJane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum.Jane ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam possimus voluptatibus minima distinctio dolore corporis quis sapiente fugiat ipsum."
-    }
+   
   ]
