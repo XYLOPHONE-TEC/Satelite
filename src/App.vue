@@ -5,8 +5,7 @@
    <div class="main">
       <Desc/>
       <Code/>
-      <Editor/>
-      <Pre/>
+     
    </div>
    
 
@@ -16,8 +15,7 @@
 import Nav from './components/navigation.vue'
 import Desc from './components/Description.vue'
 import Code from './components/code.vue'
-import Editor from './components/editor.vue'
-import Pre from './components/Preview.vue'
+
 
 export default {
   name: "App",
@@ -25,8 +23,7 @@ export default {
     Nav,
     Desc,
     Code,
-    Pre,
-    Editor,
+  
 
   },
   data() {
