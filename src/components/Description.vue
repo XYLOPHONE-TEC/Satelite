@@ -4,7 +4,7 @@
             <h1>Markdown Explorer</h1>
         </div>
         <div class="instruction">
-               <p>Select from the list of items below to generate the code snippet</p>
+               <p>Select from a list of items below to generate the code snippet</p>
         </div> 
         <Select></Select>
     </div>
