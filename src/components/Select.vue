@@ -9,8 +9,7 @@
         </div>
         <template v-if="mention">
         <div class="options" id="optionsdiv" >
-            <p v-for="resultitem in resultList" :key="resultitem.id" @click="Clicked(resultitem.name,resultitem.explaination)" class="option">{{ resultitem.name }}</p>
-            <p class="option">{{ error }}</p>
+            <p v-for="resultitem in resultList" :key="resultitem.id" @click="Clicked(resultitem.name,resultitem.explaination,resultitem.code)" class="option">{{ resultitem.name }}</p>
         </div>
         </template>
    </div>
@@ -28,7 +27,6 @@
                 mention:false,
                 inputs: "",
                 resultList: [],
-                error:""
             }
         },
         methods: {
@@ -62,9 +60,9 @@
 
 
         //    code display
-            Clicked(gotten,gottenExp){
+            Clicked(gottenname,gottenExp,gottencode){
                   this.mention=false
-                  generate(gotten,gottenExp)
+                  generate(gottenname,gottenExp,gottencode)
         
        }
         },
