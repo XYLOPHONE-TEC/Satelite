@@ -7,7 +7,7 @@
       <Code/>
      
    </div>
-  
+   <Footer/>
   
 
 </template>
@@ -16,8 +16,7 @@
 import Nav from './components/navigation.vue'
 import Desc from './components/Description.vue'
 import Code from './components/code.vue'
-
-
+import Footer from './components/footer.vue'
 
 export default {
   name: "App",
@@ -25,7 +24,7 @@ export default {
     Nav,
     Desc,
     Code,
-  
+    Footer
 
   },
   data() {
