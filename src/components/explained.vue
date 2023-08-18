@@ -2,7 +2,7 @@
     <div>
         <div class="explaination">
             <div class="exp-heading">
-                <p id="exp-heading">Explaination</p>
+                <p id="exp-heading">Explanation</p>
             </div>
             <div class="exp-content">
                 <p id="exp-content"></p>
