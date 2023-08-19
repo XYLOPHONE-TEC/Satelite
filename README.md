@@ -37,7 +37,12 @@ The Markdown Explorer is a comprehensive tool designed to assist both beginners 
 - **Guided Documentation**: The Markdown Explorer offers comprehensive documentation and tutorials on Markdown syntax and best practices. Beginners can follow the step-by-step guides to learn Markdown from scratch, while professionals can refer to the documentation for advanced techniques and tips.
 
 - **Copy**: Once users have completed their selection, they can copy the code to the editors for customization, such as Markdown files or HTML documents. This allows for easy sharing of the content with others or integration into other projects.
+- **Live Preview**: The Markdown Explorer provides a live preview feature, allowing users to visualize their Markdown content in real-time. As users write or modify their Markdown, the application instantly renders a preview, enabling them to see how the final output will appear in a browser or Markdown viewer.
 
+- **Inbuilt Preview Editor**: In addition to the live preview, the application also includes an inbuilt preview editor. Users can utilize this editor to write Markdown content directly within the application. It offers a user-friendly interface with formatting options, making it easy for users to create well-structured Markdown documents.
+
+- **Export and Share**: Once users have completed their Markdown content, they can export it in markdown file format . This allows for easy sharing of the content with others or integration into other projects.
+  
 ## Usage Workflow
 
 Users can follow these steps to effectively utilize the Markdown Guide Application:
