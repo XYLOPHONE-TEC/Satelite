@@ -32,6 +32,13 @@ a:hover{
     margin:10px;
 }
 
+.disabled-main {
+    pointer-events: none;
+   -webkit-filter: blur(3px);
+   filter:blur(3px);/* Disable interactions with elements on the body */
+
+}
+
 
 
 /* ...................the heading component................ */
@@ -130,10 +137,62 @@ p{
     
   }
 
+  #gen-cod{
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:13px;
+  }
 
  
   
-  /* the footer */
+  /* the alert */
+   
+  .alert{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    background-color:white;
+    z-index: 5;
+    border-radius: 10px;
+}
+.alert ol{
+    padding:0;
+    text-align: center;
+    margin-top: 0;
+    background: #032d41;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.alert ol li{
+    margin-bottom: 5px;
+  
+}
+.alert ol #alerttitle{
+    color:#06f79b
+}
+.alert ol li a{
+    color:white;
+}
+.alert ol li a:hover{
+    color: blue;
+    font-weight: bolder;
+}
+
+.close{
+    color:white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    margin-left: 60%;
+    margin-bottom: 10px;
+    padding: 5px;
+
+    
+
+}
 
 
 
@@ -208,6 +267,18 @@ p{
         transition: 1s background;
     }
 
+    /* ................code hander .......................*/
+
+    #gen-code{
+        font-size: 1rem;
+    }
+
+    /* .................the alert ......................*/
+
+    .close{
+        margin-left: 70%;
+        margin-bottom: 10px;
+    }
 }
 @media screen and (min-width:450px) {
 
@@ -268,6 +339,23 @@ p{
         color:#06f79b;
         transition: 1s background;
     }
+
+
+
+    /* ..................code handler ......................*/
+
+
+    #gen-cod{
+        font-size: 1.2rem;
+    }
+
+    /* ...........the alert ..................*/
+
+    .alert{
+        width: 50%;
+    }
+
+
 }
 @media screen and (min-width:768px) {
 
@@ -344,6 +432,21 @@ p{
         margin: 100px auto;
         
     }
+    #gen-cod{
+       
+        font-size:13px;
+        font-size: 1rem;
+      }
+
+       /* ...........the alert ..................*/
+
+    .alert{
+        width: 40%;
+    }
+    .close{
+        margin-left: 75%;
+        
+    }
 }
 
 
@@ -398,7 +501,9 @@ p{
         margin: 100px auto;
         
     }
-
+    #gen-cod{
+        font-size: 1rem;
+    }
 
 }
 @media screen and (min-width:1670px) {
@@ -479,6 +584,9 @@ p{
        
         margin: 100px auto;
         
+    }
+    #gen-cod{
+        font-size: 2rem;
     }
 
 }

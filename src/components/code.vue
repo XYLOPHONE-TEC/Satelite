@@ -65,11 +65,7 @@ svg{
   border-radius: 5px;
   color: #fff;
 } 
-#gen-cod{
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-}
+
 #blinker{
   color:#0d8f59;
   font-size: 20px;
