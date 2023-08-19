@@ -25,7 +25,19 @@
       </ul> 
     </div>
     <hr>
-        
+    <template v-if="alert">
+        <div class="alert">
+        <ol>
+           <li class="lists" id="alerttitle">Built by</li>
+           <li class="lists"><a :href="urlkalungi">Kalungi Rasuli</a></li>
+           <li class="lists"><a :href="urlxylophone">Xylophone-tec</a></li>
+           <li class="lists"> <a :href="twitter">Twitter</a></li>
+           <li class="lists"> <a :href="refactory">Academy</a></li>
+           <!-- <li class="lists"><a href="#">Donate</a></li> -->
+        </ol>
+     <button class="close" @click="close()" >CLOSE</button>
+   </div>  
+    </template>
 </template>
 
 <script>
@@ -35,10 +47,16 @@ import {speedchar} from '../../public/js/generate'
         data(){
             return{
                 drop:false,
-
-
+                alert:false,
+                urlxylophone:'https://github.com/XYLOPHONE-TEC/Markdown',
+                urlkalungi:'https://github.com/kalungirasuli',
+                twitter:'https://twitter.com/KalungiRasuli',
+                refactory:'https://www.refactory.ug/',
+                message:'By Clicking the speed icon '
+             
             }
         },
+       
         methods:{
            
             dropdownfunc() {
@@ -46,18 +64,29 @@ import {speedchar} from '../../public/js/generate'
                 if (x.className === "dropdownicons") {
                     x.className += " responsive";
                 } else {
-                    x.className = "dropdownicons";
-                }
+                     x.className = "dropdownicons";
+                 }
                 } ,
                 speed(){
                     speedchar()
                 },
                 others(){
-                    alert("Still in development")
+                    if(!this.alert){
+                        this.alert=true
+                        let main = document.querySelector('.main');
+                        main.classList.add('disabled-main');
+                    }
+                },
+                close(){
+                    if(this.alert){
+                        this.alert=false
+                        let main = document.querySelector('.main');
+                        main.classList.remove('disabled-main');
+                    }
                 },
                 mode(){
                     alert("Still in development")
-                }
+                },
 
         }
         
