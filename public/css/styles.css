@@ -32,10 +32,10 @@ a:hover{
     margin:10px;
 }
 
-.disabled-main {
+.disabled-main { /* Disable interactions with elements on the body */
     pointer-events: none;
    -webkit-filter: blur(3px);
-   filter:blur(3px);/* Disable interactions with elements on the body */
+   filter:blur(3px);  
 
 }
 
@@ -130,6 +130,7 @@ p{
     border-top-left-radius: 10px;
     border-top-right-radius: 20px;
     box-shadow:  0 0 5px  #0d798f, 0 0 7px  #0d798f, 0 0 0px #0d798f;
+    font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace !important;
 }
 .span{
     padding: 10px 5px;
@@ -144,9 +145,16 @@ p{
     font-size:13px;
   }
 
- 
+
+
+ /*........................ code explation .................. */
+
+
+ .exp-content{
+    font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace !important;
+ }
   
-  /* the alert */
+  /*................... the alert .......................*/
    
   .alert{
     position: absolute;
@@ -238,7 +246,7 @@ p{
         padding:3px 2px; 
     }
     .input{
-        grid-template-columns:  80% 10%;
+        grid-template-columns:  80% 10% ;
         position: relative;
         top:-10px;
     }
