@@ -16,6 +16,148 @@
       "name": "Link",
       "code":"[Link]( https://www.eg.com )  ",
       "explaination":"The code provided above creates a link to a website, feel free to customize the code to meet your different prefferances by changing the text in the square brackets to your desired text and the link in the round brackets to your desired link."
+    },
+    {
+      "id": ".md-1.1.0",
+      "name": "Emphasis",
+      "code": "*Italic* or _Italic_ <br>**Bold** __Bold__",
+      "explaination": "You can use asterisks (*) or underscores (_) to create emphasis. One asterisk/underscore will create italic text, while two will create bold text."
+    },
+    {
+      "id": ".md-1.1.1",
+      "name": "Lists",
+      "code": "Unordered List:<br>- Item 1<br>- Item 2<br>  - Subitem A<br>  - Subitem B<br>Ordered List:<br>1. First item<br>2. Second item<br>3. Third item",
+      "explaination": "Markdown supports both ordered and unordered lists. Use dashes (-) or asterisks (*) for unordered lists, and numbers for ordered lists."
+    },
+    {
+      "id": ".md-1.1.2",
+      "name": "Code Block",
+      "code": "```python<br>print('Hello, World!')<br>```",
+      "explaination": "Use triple backticks (```) to create a code block. You can also specify the language for syntax highlighting after the opening triple backticks, as shown in the example."
+    },
+    {
+      "id": ".md-1.1.3",
+      "name": "Images",
+      "code": "![Alt Text](image-url)",
+      "explaination": "To display an image, use an exclamation mark (!), followed by the alt text in square brackets and the image URL in parentheses."
+    },
+    {
+      "id": ".md-1.1.4",
+      "name": "Blockquote",
+      "code": "> This is a blockquote.",
+      "explaination": "Use the greater-than symbol (>) followed by a space to create a blockquote. You can also nest blockquotes."
+    },
+    {
+      "id": ".md-1.1.5",
+      "name": "Task List",
+      "code": "- [x] Task 1<br>- [ ] Task 2 <br>- [ ] Task 3",
+      "explaination": "In GitHub-flavored Markdown, you can create task lists using square brackets with an 'x' for completed tasks and a space for incomplete tasks."
+    },
+    {
+      "id": ".md-1.1.6",
+      "name": "Tables",
+      "code": "| Header 1 | Header 2 |<br>|----------|----------|<br>| Cell 1   | Cell 2   |",
+      "explaination": "Create tables using vertical bars (|) to separate cells and hyphens (-) to create headers. The header row is separated from the content with a row of pipes."
+    },
+    {
+      "id": ".md-1.2.0",
+      "name": "Code Inline",
+      "code": "Use `printf()` to print text.",
+      "explaination": "To create inline code, enclose the code within backticks (`)."
+    },
+    {
+      "id": ".md-1.2.1",
+      "name": "Strikethrough",
+      "code": "~~Strikethrough~~",
+      "explaination": "Add two tildes (~~) before and after the text to create strikethrough."
+    },
+    {
+      "id": ".md-1.2.2",
+      "name": "Horizontal Rule",
+      "code": "---",
+      "explaination": "You can create a horizontal rule with three or more hyphens, asterisks, or underscores on a line by themselves."
+    },
+    {
+      "id": ".md-1.2.3",
+      "name": "Mentions",
+      "code": "@username",
+      "explaination": "In GitHub-flavored Markdown, you can mention users or teams by using the @ symbol followed by the username."
+    },
+    {
+      "id": ".md-1.2.4",
+      "name": "Emoji",
+      "code": ":+1: :smile: :rocket:",
+      "explaination": "GitHub-flavored Markdown supports emojis. Use colons to enclose the emoji name."
+    },
+    {
+      "id": ".md-1.2.5",
+      "name": "Fenced Code Blocks",
+      "code": "```javascript<br>console.log('Hello, World!');<br>```",
+      "explaination": "For code blocks with syntax highlighting, you can specify the language immediately after the opening triple backticks."
+    },
+    {
+      "id": ".md-1.2.6",
+      "name": "Links to Headings",
+      "code": "[Jump to Heading](#heading)",
+      "explaination": "You can create internal links to headings in the same document by using a hash symbol (#) followed by the heading text in lowercase, with spaces replaced by hyphens."
+    },
+    {
+      "id": ".md-1.3.0",
+      "name": "Footnotes",
+      "code": "Here is a sentence with a footnote[^1].<br><br>[^1]: This is the footnote content.",
+      "explaination": "You can create footnotes using the caret symbol (^) followed by a unique identifier in square brackets. The footnote content is defined at the bottom of the document."
+    },
+    {
+      "id": ".md-1.3.1",
+      "name": "Autolinks",
+      "code": "http://www.example.com",
+      "explaination": "URLs and email addresses are automatically converted to clickable links in Markdown."
+    },
+    {
+      "id": ".md-1.3.2",
+      "name": "Strikethrough",
+      "code": "~~Strikethrough~~",
+      "explaination": "To create strikethrough text, wrap the text with two tildes (~~)."
+    },
+    {
+      "id": ".md-1.3.3",
+      "name": "Superscript and Subscript",
+      "code": "x&lt;sup&gt;2&lt;/sup&gt; and H&lt;sub&gt;2&lt;/sub&gt;O",
+      "explaination": "You can create superscript using the  tag &lt;sup&gt; and subscript using the &lt;sub&gt; tag."
+    },
+    
+    {
+      "id": ".md-1.6.1",
+      "name": "SHA-1 Hashes",
+      "code": "16c999e8c71134401a78d4d46435517b2271d6ac",
+      "explaination": "GitHub-flavored Markdown recognizes and formats SHA-1 hashes as links to corresponding commits on GitHub repositories."
+    },
+    {
+      "id": ".md-1.6.2",
+      "name": "Issue References",
+      "code": "#42",
+      "explaination": "GitHub-flavored Markdown will automatically create links to issues when you reference them using the `#` symbol followed by the issue number."
+    },
+    {
+      "id": ".md-1.6.4",
+      "name": "Mentioning Commits",
+      "code": "abc1234",
+      "explaination": "When you reference a commit using its SHA-1 hash, GitHub-flavored Markdown will create a link to that commit in the repository."
+    },
+    {
+      "id": ".md-1.7.1",
+      "name": "Table of Contents",
+      "code": "[TOC]",
+      "explaination": "GitHub-flavored Markdown can generate a table of contents for your document by adding `[TOC]` at the desired location."
+    },
+    {
+      "id": ".md-1.7.3",
+      "name": "Issue and Pull Request References",
+      "code": "Referencing issue: #42\nReferencing PR: #23",
+      "explaination": "GitHub-flavored Markdown allows you to reference issues and pull requests using the `#` symbol followed by the issue or PR number."
     }
-   
+      
+    
+    
+    
   ]
